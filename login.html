@@ -1,0 +1,154 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <title>SEVENTEEN CART | HOME</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            
+            .container{
+                border: 1px solid grey;
+                border-left: 1px solid red;
+                border-top:1px solid green;
+                border-right:1px solid blue;
+                padding: 20px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+                width: 30%;
+                margin:auto;
+                margin-top: 100px;
+            }
+            .user-input{
+                padding: 5px;
+                border-radius: 20px;
+                margin:auto;
+                width: 70%;
+                border: 1px solid grey;
+                border-left: 1px solid blue;
+                border-top: 1px solid green;
+                border-right:1px solid red;
+            }
+            a{
+                text-decoration: none;
+            }
+            .remember-me, .login, p{
+                margin:10px;
+                
+            }
+
+            
+            .login{
+                background-color: black;
+                border-radius: 20px;
+                margin-left: 30%;
+                margin-right: 30%;
+                padding: 8px;
+                cursor: pointer;
+                
+            }
+            .login:hover{
+                background-color: gray;
+                
+    
+            }
+
+            .login-a{
+                color: white;
+            }
+
+
+
+
+            .header{
+                margin-left: 5%;
+                margin-right: 5%;
+                
+            }
+            h1 p{
+                padding:0;
+                margin:0;
+            }
+            nav{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 20px;
+               
+                
+            }
+            ul li {
+                display: inline-block;
+                
+                border: 1px solid gray;
+                border-left: 1px solid blue;
+                border-top: 1px solid green;
+                border-right:1px solid red;
+                border-radius: 10px;
+                padding: 2px;
+                text-align: center;
+                margin: 8px;
+                padding:  10px;
+            }
+            ul li:hover{
+                background:black;
+            }
+            ul li a{
+                color: black;
+            }
+            ul li a:hover{
+                color: white;
+            }
+           
+        </style>
+
+
+        
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+                <div class="logo">
+                    <h1>SEVENTEEN <span style="color: green">CART</span></h1>
+
+                </div class='navs'>
+                <div>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </div>
+
+
+
+        
+        <div class='container'>
+            <form>
+                <h1>Login</h1><br>
+                    <input placeholder="Username" type='text' class='user-input' required><br>
+                    <input placeholder="Password" type='password' class='user-input' required>
+                    <div class='remember-me'>
+                        <input  type='checkbox'>
+                        <label> Remember Me | <a href="# ">forget password</a></label>
+                    </div>
+                    <div class='login'>
+                        <a href='/index.html' class='login-a'>Login</a>
+                    </div>
+
+                    <p>Don't have an account?  <a href='#'>Sign Up</a></p>
+            </form>
+        </div>
+    </body>
+</html>
