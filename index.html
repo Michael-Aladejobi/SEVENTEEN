@@ -15,16 +15,13 @@
 </head>
 
 <body style="background:rgb(255, 255, 255);">
-  <header>
-    <div style='position:fixed;
+  
+  <div style='position:fixed;
               display: flex;
-              margin-left: 93%;
-              margin-right: auto;
-              margin-top: 500px;
-              
-  ' >
-    <h3 style="display:inline;">0</h3>
-      <a href="#">
+              margin-left: 94%;
+              margin-top: 500px;'>
+    <h3 id="cart-count" style="display:inline;">0</h3>
+      <a href="cart.html">
         <img src="assets\images\icons\cart.webp" 
           style='width:50px; 
           height:"50px";
@@ -35,7 +32,7 @@
           '> 
       </a>
    </div>
-    
+  <header>
     <div class="header">
       <nav>
           <div class="logo">
@@ -48,7 +45,7 @@
                   <li><a href="#category">Products</a></li>
                   <li><a href="#contact">About</a></li>
                   <li><a href="#contact">Contact</a></li>
-                  <li><a href="login.html">Login</a></li>
+                  <li><a href="login.html">Sign out</a></li>
               </ul>
           </div>
       </nav>
@@ -847,7 +844,7 @@
                         <p class="price">NGN4200.00</p>
                         <del>NGN4500.00</del>
                       </div>
-
+                      <div class="plus-append" onclick="addToCart()">+</div>
                     </div>
 
                   </div>
@@ -870,6 +867,7 @@
                         <p class="price">NGN10000.00</p>
                         <del>NGN11100.00</del>
                       </div>
+                      <div class="plus-append" onclick="addToCart()">+</div>
                   
                     </div>
                   
@@ -894,6 +892,7 @@
                         <p class="price">NGN4600.00</p>
                         <del>NGN5900.00</del>
                       </div>
+                      <div class="plus-append" onclick="addToCart()">+</div>
                   
                     </div>
                   
@@ -918,6 +917,7 @@
                         <p class="price">NGN10222.00</p>
                         <del>NGN10000.00</del>
                       </div>
+                      <div class="plus-append" onclick="addToCart()">+</div>
                   
                     </div>
                   
@@ -1056,6 +1056,7 @@
                         <p class="price">NGN4900.00</p>
                         <del>NGN3000.00</del>
                       </div>
+                      <div class="plus-append" onclick="addToCart()">+</div>
             
                     </div>
             
@@ -1080,6 +1081,7 @@
                         <p class="price">NGN7800.00</p>
                         <del>NGN3600.00</del>
                       </div>
+                      <div class="plus-append" onclick="addToCart()">+</div>
             
                     </div>
             
@@ -1104,6 +1106,7 @@
                         <p class="price">NGN9400.00</p>
                         <del>NGN8000.00</del>
                       </div>
+                      <div class="plus-append" onclick="addToCart()">+</div>
             
                     </div>
             
@@ -1128,6 +1131,7 @@
                         <p class="price">NGN5500.00</p>
                         <del>NGN6500.00</del>
                       </div>
+                      <div class="plus-append" onclick="addToCart()">+</div>
             
                     </div>
             
@@ -1153,9 +1157,10 @@
                       <a href="#" class="showcase-category">Sports</a>
             
                       <div class="price-box">
-                        <p class="price">NGN52.00</p>
-                        <del>NGN55.00</del>
+                        <p class="price">NGN5200.00</p>
+                        <del>NGN5500.00</del>
                       </div>
+                      <div class="plus-append" onclick="addToCart()">+</div>
             
                     </div>
             
@@ -1176,8 +1181,9 @@
                       <a href="#" class="showcase-category">boots</a>
             
                       <div class="price-box">
-                        <p class="price">NGN20.00</p>
-                        <del>NGN30.00</del>
+                        <p class="price">NGN20000.00</p>
+                        <del>NGN30000.00</del>
+                        <div class="plus-append" onclick="addToCart()">+</div>
                       </div>
             
                     </div>
@@ -1200,9 +1206,10 @@
                       <a href="#" class="showcase-category">formal</a>
             
                       <div class="price-box">
-                        <p class="price">NGN56.00</p>
-                        <del>NGN78.00</del>
+                        <p class="price">NGN5600.00</p>
+                        <del>NGN7800.00</del>
                       </div>
+                      <div class="plus-append" onclick="addToCart()">+</div>
             
                     </div>
             
@@ -1223,9 +1230,10 @@
                       <a href="#" class="showcase-category">Casual</a>
             
                       <div class="price-box">
-                        <p class="price">NGN50.00</p>
-                        <del>NGN55.00</del>
+                        <p class="price">NGN5000.00</p>
+                        <del>NGN5500.00</del>
                       </div>
+                      <div class="plus-append" onclick="addToCart()">+</div>
             
                     </div>
             
@@ -1492,7 +1500,7 @@
                       <del>NGN20000.00</del>
                     </div>
 
-                    <button class="add-cart-btn">add to cart</button>
+                    <button class="add-cart-btn" onclick="addToCart()">add to cart</button>
 
                     <div class="showcase-status">
                       <div class="wrapper">
@@ -1577,10 +1585,10 @@
               
                     <div class="price-box">
                       <p class="price">NGN1990.00</p>
-                      <del>NGN2000.00</del>
+                      <del>NGN20000.00</del>
                     </div>
               
-                    <button class="add-cart-btn">add to cart</button>
+                    <button class="add-cart-btn" onclick="addToCart()">add to cart</button>
               
                     <div class="showcase-status">
                       <div class="wrapper">
@@ -2768,7 +2776,7 @@
             </div>
 
             <address class="content">
-               Victoria island Lagos
+             Victoria Island, Lagos
             </address>
           </li>
 
@@ -2861,6 +2869,7 @@
   <!--
     - ionicon link
   -->
+  <script src="index.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
