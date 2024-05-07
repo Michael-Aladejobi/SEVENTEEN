@@ -463,6 +463,23 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   border-radius: 20px;
 }
 
+.plus-append{
+  border: 1px solid grey;
+  width: 30px;
+  height: 30px;
+  padding: auto;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-left: auto;
+
+}
+.plus-append:hover{
+  background-color: black;
+  color:#fff;
+}
 .mobile-navigation-menu {
   background: var(--white);
   position: fixed;
@@ -2510,9 +2527,7 @@ footer {
 
 
 
-  /**
-   * #BLOG
-   */
+  
 
   .blog { margin-bottom: 50px; }
   
@@ -2539,31 +2554,15 @@ footer {
 
 
 
-/**
- * responsive larger than 1400px screen
- */
 
 @media (min-width: 1400px) {
 
-  /**
-   * #BASE 
-   */
+
 
   html { font-size: 18px; }
 
-
-
-  /**
-   * #REUSED STYLE 
-   */
-
   .container { max-width: 1350px; }
 
-
-
-  /**
-   * #BANNER
-   */
 
   .slider-item { height: 450px; }
 
